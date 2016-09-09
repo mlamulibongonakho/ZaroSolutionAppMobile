@@ -1,0 +1,48 @@
+/* Empty. Add your own CSS if you like */
+
+.imgcontainer{
+	text-align: center;
+	margin: 24px 0 12px;
+}
+.divReg{
+	padding: 10px;
+	background-color: #f1f1f1;
+}
+span.forgetP{
+	float: left;
+padding-top: 16px;}
+
+#wrapper{
+	/*//width: 500px;*/
+	padding: 5px;
+	background-color: #f1f1f1;
+	border-radius: 2px  5px 10px 5px;
+	height: 170px;
+
+}
+#imgContainer{
+	float: left;
+}
+#divManipulateProfile{
+	/*width: 230px;*/
+	
+	padding: 30px;
+	overflow: hidden;
+}
+.img-responsive{
+	width: 100%;
+	height: auto;
+}
+.zero{
+	font-size: 200px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height:100px;
+	border-radius: 10px;
+
+}

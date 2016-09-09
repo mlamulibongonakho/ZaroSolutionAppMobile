@@ -1,0 +1,48 @@
+<ion-view>
+<ion-nav-bar class="bar-stable bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+<ion-content class="has-header">
+
+<div class="list">
+
+<label class="item item-input item-select">
+    <div class="input-label">
+      Gender
+    </div>
+    <select ng-model="regData.gender">
+      <option selected>Male</option>
+      <option>Female</option>
+    </select>
+  </label>
+	<label class="item item-input item-stacked-label">
+	<span class="input-label">First Name</span>
+		<input type="text" ng-model="regData.name" placeholder="First Name">
+	</label>
+	<label class="item item-input item-stacked-label">
+	<span class="input-label">Last Name</span>
+		<input type="text" ng-model="regData.surname" placeholder="Last Name">
+	</label>
+	<label class="item item-input item-stacked-label">
+	<span class="input-label">Cell Number</span>
+		<input type="text" ng-model="regData.cellnumber" placeholder="Cell Number">
+	</label>
+	<label class="item item-input item-stacked-label">
+	<span class="input-label">Email</span>
+		<input type="email" ng-model="regData.email" placeholder="Example@gmail.com">
+	</label>
+	<label class="item item-input item-stacked-label">
+	<span class="input-label">Password</span>
+		<input type="text" ng-model="regData.password" placeholder="Password">
+	</label>
+	<!-- <label class="item item-input item-stacked-label">
+	<span class="input-label">Confirm Password</span>
+		<input type="text" ng-model="regData.confpassword" placeholder="Confirm Password">
+	</label> -->
+	<button class="button button-block button-balanced" ng-click="register()">
+  Submit
+</button>
+</div>
+</ion-content>
+</ion-view>

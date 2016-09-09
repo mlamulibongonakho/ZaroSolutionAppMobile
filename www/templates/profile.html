@@ -1,0 +1,44 @@
+<ion-view>
+<ion-nav-bar class="bar-stable bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <!-- <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button> -->
+      </ion-nav-buttons>
+    </ion-nav-bar>
+<ion-content>
+<br>
+<div id="wrapper">
+  <div id="imgContainer">
+    <img id="img-responsive" src="img/User-icon.png" alt="" > 
+  </div>
+  <div class="list" id="divManipulateProfile">
+    <label ><button class="button button-block button-royal"  ng-click="btnEnable()">
+  Edit ?
+</button></label>
+  </div>
+</div>
+<div class="list list-insert">
+  <label class="item item-input">
+  <span class="input-label">First Name</span>
+    <input type="text" ng-model="profileData.firstName" placeholder="First Name" ng-disabled="dData">
+  </label>
+  <label class="item item-input">
+  <span class="input-label">Last Name</span>
+    <input type="text" ng-model="profileData.lastName" placeholder="Last Name" ng-disabled="dData">
+  </label>
+  <label class="item item-input">
+  <span class="input-label">Cell Number</span>
+    <input type="text" ng-model="profileData.cellnumber" placeholder="Cell Number" ng-disabled="dData">
+  </label>
+  <label class="item item-input">
+  <span class="input-label">Email</span>
+    <input type="text" ng-model="profileData.email" placeholder="Email" ng-disabled="!edit">
+  </label>
+  <button class="button button-block button-balanced" ng-click="update()">
+  Save
+</button>
+</div>
+</ion-content>
+</ion-view>
